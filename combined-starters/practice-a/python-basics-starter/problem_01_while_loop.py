@@ -11,8 +11,14 @@
 
 # Your code here
 def my_while_loop(arr):
-    while arr > 5:
-            return arr
+  newList = []
+  i = 0
+  while i < len(arr):
+    word = arr[i]
+    if len(word) > 5:
+      newList.append(word)
+    i+=1
+  return newList
 
 # __________SAMPLE TEST DATA__________ #
 test = ["nope", "yes this one", "not", "uhuh", "here's one", "narp"]

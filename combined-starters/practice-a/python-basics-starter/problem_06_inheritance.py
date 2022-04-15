@@ -11,11 +11,8 @@
 
 # Your code here
 class Employee:
-    def __init__(self):
-        pass
+    pass
 
 
 class Manager(Employee):
-    def __init__(self):
-        super()
-            pass
+    pass

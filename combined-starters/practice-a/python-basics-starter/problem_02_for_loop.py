@@ -11,10 +11,11 @@
 
 # Your code here
 def my_for_loop(arr):
-    for words in arr:
-        if len(words) > 5:
-            return [words]
-
+    newArr = []
+    for word in arr:
+        if len(word) > 5:
+            newArr.append(word)
+    return newArr  # must return the new arr separately
 
 # __________SAMPLE TEST DATA__________ #
 test = ["nope", "yes this one", "not", "uhuh", "here's one", "narp"]

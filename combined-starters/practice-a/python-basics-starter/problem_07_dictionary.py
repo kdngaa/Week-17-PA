@@ -10,10 +10,14 @@
 #______________________________YOUR CODE BELOW______________________________#
 
 # Your code here
-def my_filter(dict):
-    
+def my_filter(obj):
+  newDict = dict()
+  for key, value in obj.items():
+    if len(key) >= 5:
+      newDict[key] = value
+  return newDict
 
 # __________SAMPLE TEST DATA__________ #
-# print(my_filter({".": 1, "..": 2, ".....": 5}))  # > {".....": 5}
-# print(my_filter({}))  # > {}
-# print(my_filter({"12345": 0, "abbba": 0}))  # > {"12345": 0, "abbba": 0}
+print(my_filter({".": 1, "..": 2, ".....": 5}))  # > {".....": 5}
+print(my_filter({}))  # > {}
+print(my_filter({"12345": 0, "abbba": 0}))  # > {"12345": 0, "abbba": 0}
