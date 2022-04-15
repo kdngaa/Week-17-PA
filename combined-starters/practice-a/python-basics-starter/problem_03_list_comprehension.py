@@ -11,14 +11,15 @@
 #______________________________YOUR CODE BELOW______________________________#
 
 # Your code here
-
+def my_comprehension(arr):
+  return [word for word in arr if len(word) > 5]
 
 # __________SAMPLE TEST DATA__________ #
-# test = ["nope", "yes this one", "not", "uhuh", "here's one", "narp"]
-# print(my_comprehension(test))  # > ["yes this one", "here's one"]
+test = ["nope", "yes this one", "not", "uhuh", "here's one", "narp"]
+print(my_comprehension(test))  # > ["yes this one", "here's one"]
 
-# test = ["plop", "", "drop", "zop", "stop"]
-# print(my_comprehension(test))  # > []
+test = ["plop", "", "drop", "zop", "stop"]
+print(my_comprehension(test))  # > []
 
-# test = []
-# print(my_comprehension(test))  # > []
+test = []
+print(my_comprehension(test))  # > []

@@ -19,4 +19,20 @@
 #______________________________YOUR CODE BELOW______________________________#
 
 # Your code here
+class Airport:
+    def __init__(self, name, abbreviation):
+        self.name = name
+        self.abbreviation = abbreviation
+        self.planes = 0
 
+    def number_of_planes(self):
+        self.planes = 0
+
+    def plane_arrives(self):
+        self.planes += 1
+
+    def get_number_of_planes(self):
+        self.planes -= 1
+
+    def __repr__(self):
+        return f'{self.abbreviation} {number_of_planes}'

@@ -10,7 +10,8 @@
 #______________________________YOUR CODE BELOW______________________________#
 
 # Your code here
-
+def my_filter(dict):
+    
 
 # __________SAMPLE TEST DATA__________ #
 # print(my_filter({".": 1, "..": 2, ".....": 5}))  # > {".....": 5}

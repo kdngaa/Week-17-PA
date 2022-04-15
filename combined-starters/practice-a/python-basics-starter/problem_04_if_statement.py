@@ -23,10 +23,18 @@
 #______________________________YOUR CODE BELOW______________________________#
 
 # Your code here
-
+def lossy_transform(i):
+    if i < 10:
+        return 0
+    elif i >= 10 and i < 47:
+        return i * 2
+    elif i >= 47 and i < 1001:
+        return i / 3
+    elif i >= 1001:
+        return None
 
 # __________SAMPLE TEST DATA__________ #
-# print(lossy_transform(8))     # > 0
-# print(lossy_transform(33))    # > 66
-# print(lossy_transform(99))    # > 33
-# print(lossy_transform(1002))  # > None
+print(lossy_transform(8))     # > 0
+print(lossy_transform(33))    # > 66
+print(lossy_transform(99))    # > 33
+print(lossy_transform(1002))  # > None

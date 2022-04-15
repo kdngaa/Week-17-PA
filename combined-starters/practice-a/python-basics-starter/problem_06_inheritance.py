@@ -10,6 +10,12 @@
 #______________________________YOUR CODE BELOW______________________________#
 
 # Your code here
+class Employee:
+    def __init__(self):
+        pass
 
 
-
+class Manager(Employee):
+    def __init__(self):
+        super()
+            pass

@@ -10,14 +10,16 @@
 #______________________________YOUR CODE BELOW______________________________#
 
 # Your code here
-
+def my_while_loop(arr):
+    while arr > 5:
+            return arr
 
 # __________SAMPLE TEST DATA__________ #
-# test = ["nope", "yes this one", "not", "uhuh", "here's one", "narp"]
-# print(my_while_loop(test))  # > ["yes this one", "here's one"]
+test = ["nope", "yes this one", "not", "uhuh", "here's one", "narp"]
+print(my_while_loop(test))  # > ["yes this one", "here's one"]
 
-# test = ["plop", "", "drop", "zop", "stop"]
-# print(my_while_loop(test))  # > []
+test = ["plop", "", "drop", "zop", "stop"]
+print(my_while_loop(test))  # > []
 
-# test = []
-# print(my_while_loop(test))  # > []
+test = []
+print(my_while_loop(test))  # > []

@@ -10,14 +10,18 @@
 #______________________________YOUR CODE BELOW______________________________#
 
 # Your code here
+def my_for_loop(arr):
+    for words in arr:
+        if len(words) > 5:
+            return [words]
 
 
 # __________SAMPLE TEST DATA__________ #
-# test = ["nope", "yes this one", "not", "uhuh", "here's one", "narp"]
-# print(my_for_loop(test))  # > ["yes this one", "here's one"]
+test = ["nope", "yes this one", "not", "uhuh", "here's one", "narp"]
+print(my_for_loop(test))  # > ["yes this one", "here's one"]
 
-# test = ["plop", "", "drop", "zop", "stop"]
-# print(my_for_loop(test))  # > []
+test = ["plop", "", "drop", "zop", "stop"]
+print(my_for_loop(test))  # > []
 
-# test = []
-# print(my_for_loop(test))  # > []
+test = []
+print(my_for_loop(test))  # > []
